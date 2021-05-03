@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button head = (Button)findViewById(R.id.headache);
         Button stomach = (Button)findViewById(R.id.stomachache);
-        Button oint = (Button)findViewById(R.id.ointment);
-        Button etc = (Button)findViewById(R.id.etc);
+        Button abrasion = (Button)findViewById(R.id.abrasion);
+        Button skin = (Button)findViewById(R.id.skin);
 
         head.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        oint.setOnClickListener(new View.OnClickListener(){
+        abrasion.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, OintActivity.class);
+                Intent intent = new Intent(MainActivity.this, AbrasionActivity.class);
                 startActivity(intent);
             }
         });

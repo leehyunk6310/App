@@ -18,8 +18,8 @@
         </activity>
         <activity android:name=".HeadActivity" />
         <activity android:name=".TairenolActivity" />
-        <activity android:name=".StomachActivity" />
-        <activity android:name=".OintActivity" />
+        <activity android:name=".ReviewActivity" />
+
 
     </application>
 

@@ -27,18 +27,18 @@
     </TableRow>
     <TableRow>
         <Button
-            android:text="연고"
+            android:text="찰과상"
             android:textSize="50dp"
             android:layout_marginRight="30dp"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
-            android:id="@+id/ointment"/>
+            android:id="@+id/abrasion"/>
         <Button
-            android:text="etc"
+            android:text="피부"
             android:textSize="50dp"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
-            android:id="@+id/etc"/>
+            android:id="@+id/skin"/>
     </TableRow>
 
 
