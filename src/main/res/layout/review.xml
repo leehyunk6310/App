@@ -21,14 +21,16 @@
         android:height="500dp"
         android:hint="100자 이내로 작성해주세요"
         android:maxLength="100"
-        android:textSize="15dp" />
+        android:background="@drawable/border"
+        android:textSize="15dp"
+        android:layout_margin="10dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/contents"
-
         android:layout_marginTop="8dp"
         android:text="저장"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:id="@+id/saveButton"/>
 </RelativeLayout>
