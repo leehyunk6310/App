@@ -30,9 +30,15 @@
         android:layout_below="@+id/review"
         android:fillViewport="true">
 
+<!--        <ListView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/tairenolReviewList"/>-->
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tairenolReviewList"/>
+            android:id="@+id/newlist"
+            android:layout_below="@+id/review"/>
     </ScrollView>
+
 </RelativeLayout>

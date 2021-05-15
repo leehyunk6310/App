@@ -1,6 +1,7 @@
 package com.example.term;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -9,17 +10,18 @@ import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import java.lang.reflect.Array;
 
 public class TairenolActivity extends AppCompatActivity {
-    static final String[] reviewList = {"완전 최악!", "이보다 좋을 순 없ㅅ다", "b", "c", "f"};
+    static final String[] reviewList = {"완전 최악!", "b", "c", "f"};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tairenol);
         Button review = (Button)findViewById(R.id.review);
-        ListView listview = (ListView)findViewById(R.id.tairenolReviewList);
+//        ListView listview = (ListView)findViewById(R.id.tairenolReviewList);
 
         review.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -29,7 +31,22 @@ public class TairenolActivity extends AppCompatActivity {
             }
         });//리뷰 버튼 눌렀을때
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, reviewList);
-        listview.setAdapter(adapter);
+//        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, reviewList);
+//        listview.setAdapter(adapter);
+
+
+
+        //
+        ListView listview2;
+        ListViewAdapter ladapter;
+
+        ladapter = new ListViewAdapter();
+        listview2 = (ListView)findViewById(R.id.newlist);
+        listview2.setAdapter(ladapter);
+
+        ladapter.addItem(ContextCompat.getDrawable(this,R.drawable.test),1,"Ho");
+        ladapter.addItem(ContextCompat.getDrawable(this,R.drawable.test),2,"LAL");
+        ladapter.addItem(ContextCompat.getDrawable(this,R.drawable.test),3,"QWD");
+
     }
 }
