@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         head.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HeadActivity.class);
+                Intent intent = new Intent(MainActivity.this, MedicineList.class);
                 startActivity(intent);
             }
         });

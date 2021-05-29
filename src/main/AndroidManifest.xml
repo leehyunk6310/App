@@ -19,6 +19,7 @@
         <activity android:name=".HeadActivity" />
         <activity android:name=".TairenolActivity" />
         <activity android:name=".ReviewActivity" />
+        <activity android:name=".MedicineList" />
 
 
     </application>
